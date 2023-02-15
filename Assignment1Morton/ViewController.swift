@@ -10,20 +10,21 @@ import UIKit
 class ViewController: UIViewController {
 
     
-    @IBOutlet weak var ProfilePic: UIImageView!
-    @IBOutlet weak var Name: UILabel!
+    @IBOutlet weak var profileImageView: UIImageView!
+    @IBOutlet weak var nameLabel: UILabel!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         styleProfilePic()
     }
     
     private func styleProfilePic() {
-        ProfilePic.layer.cornerRadius = min(
-            ProfilePic.frame.width,
-            ProfilePic.frame.height
-        ) / 2.0
+        profileImageView.layer.cornerRadius = min(
+            profileImageView.frame.width,
+            profileImageView.frame.height
+        )
     }
 }
 
