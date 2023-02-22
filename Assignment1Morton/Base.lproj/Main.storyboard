@@ -17,16 +17,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3mz-Kj-7cM" userLabel="ContainerView">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3mz-Kj-7cM" userLabel="ContainerView">
                                 <rect key="frame" x="0.0" y="184" width="414" height="250"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Dr. Sam Morton" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zlc-Ea-8eA">
-                                        <rect key="frame" x="130" y="200" width="154" height="28"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dr. Sam Morton" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zlc-Ea-8eA">
+                                        <rect key="frame" x="130" y="226" width="154" height="28"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="me" highlighted="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dhf-oS-0QK">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="me" highlighted="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dhf-oS-0QK">
                                         <rect key="frame" x="115.5" y="8" width="183" height="183"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="183" id="a8t-ns-G7J"/>
@@ -39,6 +39,7 @@
                                     <constraint firstItem="Zlc-Ea-8eA" firstAttribute="centerX" secondItem="3mz-Kj-7cM" secondAttribute="centerX" id="6am-1m-LsJ"/>
                                     <constraint firstItem="Zlc-Ea-8eA" firstAttribute="top" secondItem="Dhf-oS-0QK" secondAttribute="bottom" constant="35" id="7cz-Jy-ZWX"/>
                                     <constraint firstItem="Dhf-oS-0QK" firstAttribute="centerX" secondItem="3mz-Kj-7cM" secondAttribute="centerX" id="QwL-dH-8RB"/>
+                                    <constraint firstItem="Dhf-oS-0QK" firstAttribute="top" secondItem="3mz-Kj-7cM" secondAttribute="top" constant="8" id="jMy-fp-eiP"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -47,12 +48,13 @@
                         <constraints>
                             <constraint firstItem="3mz-Kj-7cM" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="7c9-6A-2aO"/>
                             <constraint firstItem="3mz-Kj-7cM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="140" id="Cni-D6-FO7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="3mz-Kj-7cM" secondAttribute="bottom" constant="428" id="TxX-d6-mT5"/>
                             <constraint firstItem="3mz-Kj-7cM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="oTd-q6-rDu"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="Name" destination="Zlc-Ea-8eA" id="81v-h0-67y"/>
-                        <outlet property="ProfilePic" destination="Dhf-oS-0QK" id="6lJ-xf-Tm0"/>
+                        <outlet property="nameLabel" destination="Zlc-Ea-8eA" id="81v-h0-67y"/>
+                        <outlet property="profileImageView" destination="Dhf-oS-0QK" id="6lJ-xf-Tm0"/>
                     </connections>
                 </viewController>
             </objects>
